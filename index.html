@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <a href="#" class="logo">Shubham<sup>&copy;</sup></a>
+        
+        <div class="navbar">
+            <a href="#home" class="active" onclick>Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact me</a>
+        </div>
+    </div>
+
+    <!-- Home Page -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello It's me</h3>
+            <h1>Shubham Patel</h1>
+            <h3>And I'm <span>Web Developer</span></h3>
+            <p>I am a aspiring Web Developer currently pursuing Computer Engineering.I am fond of creating websites.</p>
+            <div class="btns">
+                <a href="#contact">Hire me</a>
+                <a href="/directory/Resume.pdf" download="Resume">Download CV</a>
+            </div>
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com/profile.php?id=100015658512427"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/shubham-patel-534a19230/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/patel__shubham13/"><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <div class="home-img">
+            <img src="/Images/Profile picture.png" alt="">
+        </div>
+    </section>
+
+    <!-- About Page -->
+    <section class="about" id="about">
+        <h3>About Me</h3>
+        <div class="info">
+            <img src="/Images/Shunham1.png" style="background: transparent;" alt="">
+        </div>
+        <div class="desc">
+            <p class="info"><span style="font-weight: 800;font-size: 20px;">Shubham Patel</span></p>
+                <p>Currently pursuing 3<sup>rd</sup>year in Bachelor of Engineering with Computer Science and currently enrolled in Internship.
+                I am a aspiring <b><span style="color: red;">Web Developer</b></span> and <span style="color: red;"><b>Java developer</b></span> along with it i have good <span style="color: red;"><b>Communication Skills</b></span>.
+        </div>    
+    </section>
+
+    <!-- Skills Page -->
+    <section class="skills" id="skills">
+        <h1>My Skills</h1>
+        <div class="cards">
+            <div class="card-info">
+                <img src="/assets/html.svg" alt="HTML">
+                <h3>HTML</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, repellat!</p>
+            </div>
+            <div class="card-info">
+                <img src="/assets/css.svg" alt="CSS">
+                <h3>CSS</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, consequatur?</p>
+            </div>
+            <div class="card-info">
+                <img src="/assets/js.svg" alt="JS">
+                <h3>Javascript</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, harum!</p>
+            </div>
+            <div class="card-info">
+                <img src="/assets/python.svg" alt="Python">
+                <h3>Python</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, magni.</p>
+            </div>
+            <div class="card-info">
+                <img src="/assets/django.svg" alt="Django">
+                <h3>Django</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, magni.</p>
+            </div>
+            <div class="card-info">
+                <img src="/assets/git.svg" alt="GIT">
+                <h3>Git</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, magni.</p>
+            </div>
+           
+        </div>
+    </section>
+
+
+
+    <!-- Contact Page -->
+    <section class="contact" id="contact">
+        
+        <h1>Contact Me</h1>
+        
+        <div class="container">
+            <div class="contact-info">
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-location-dot"></i></div>    
+                    <div class="data">
+                        <h5>Address</h5>
+                        <p>145 Suvarna City,Kadi,Mehsana,Gujarat</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>    
+                    <div class="data">
+                        <h5>Email</h5>
+                        <p>bedeveloper1305@gmail.com</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>    
+                    <div class="data">
+                        <h5>Contact No.</h5>
+                        <p>7990731586</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form action="#">
+                    <h3>Send Message</h3>
+                    <div class="inputbox">
+                        <input type="text" placeholder="Full Name" required="required">
+                    </div>
+                    <div class="inputbox">
+                        <input type="email" placeholder="Email" required="required">
+                    </div>
+                    <div class="inputbox">
+                        <input type="textarea" rows="2" required="required" placeholder="Enter Your message">
+                    </div>
+                    <div class="inputbox">
+                        <input type="submit" value="Send" required="required">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+        
+
+    
+</body>
+</html>
