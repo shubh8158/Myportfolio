@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #081b29;
+    color: white;
+    
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background:transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    cursor: default;
+}
+.navbar a{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+.navbar a:hover,.navbar a.active{
+    color: #108bb4;
+}
+
+/* #menu{
+    font-size: 4rem;
+    color: var(--text-color);
+    display: none;
+} */
+
+/* Home Page */
+.home{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 0 10%;
+}
+.home-content{
+    max-width: 580px;
+}
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+}
+.home-content h3{
+    font-size: 36px;
+    font-weight: 700;
+    color: #108bb4;
+}
+.home-content p{
+    font-size: 16px;
+    margin: 20px 0 40px;
+    line-height: 1.2;
+}
+
+.home-content .btns{
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+.btns a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    width: 175px;
+    height: 100%;
+    background-color: #108bb4;
+    border: 2px solid #108bb4;
+    border-radius: 10px;
+    font-size: 15px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.btns a:hover{
+    color:#108bb4;
+}
+.btns a:nth-child(2){
+    background: transparent;
+    color: #108bb4;
+}
+.btns a:nth-child(2):hover{
+    color: #081b29;
+}
+.btns a:nth-child(2)::before{
+    background: #108bb4;
+}
+.btns a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #081b29;
+    z-index: -1;
+    transition: 0.5s;
+}
+.btns a:hover::before{
+    width: 100%;
+}
+
+.social-media{
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+.social-media a{
+    position: relative;
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #108bb4;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #108bb4;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    overflow: hidden;
+    margin-left: 5px;
+}
+.social-media a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #108bb4;
+    z-index: -1;
+    transition: 0.5s;
+}
+.social-media a:hover::before{
+    width: 100%;
+}
+.social-media a:hover{
+    color:#081b29;
+}
+
+.home-img img{
+    width: 50%;
+    height: 60%;
+    border-radius: 50%;
+    margin-left: 30%;
+    background: transparent;
+    border: none;
+}
+
+/* About Page */
+.about{
+    height: 100vh;
+    width: 100%;
+}
+.about h3{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about .info img{
+    width: 20%;
+    height: 20%;
+    position: relative;
+    border-radius:50%;
+    padding: 0;
+    background: none;
+    margin-top: 10px;
+}
+
+.desc{
+    width: 50%;
+    margin-left: 25%;
+}
+.desc p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+/* Skills Page */
+.skills{
+    width: 100%;
+    height: 100vh;
+}
+.skills h1{
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    grid-gap: 40px;
+    text-align: center;
+    margin: 20px;
+    margin-top: 20px;
+    padding-top: 20px;
+    
+}
+.card-info{
+    background-color: #081b29;
+    color: white;
+}
+.card-info:hover{
+    background-color: #108bb4;
+    transition: linear 0.4s;
+    color: black;
+    transform: scale(1.1);
+    border-radius: 25px;
+    margin: 10px 5px;
+}
+.card-info img{
+    width: 100px;
+    height: 100px;
+}
+
+
+
+/* Contact Page */
+.contact{
+    min-height: 100vh;
+    position: relative;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact .content{
+   max-width: 800рх;
+   text-align: center;
+}
+.contact h1{
+    font-size: 40px;
+}   
+.container{
+   width: 100%;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 30px;
+}   
+.container .contact-info{
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+}   
+.container .contact-info.box{
+   position: relative;
+   padding: 20px 0;
+   display: flex;
+}
+
+.container .contact-info .box .icon{
+    height: 35px;
+    width:30px;
+    color: white;
+    display: flex;
+    background-color: #081b29;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.container .contact-info .box .data{
+   display: flex;
+   margin-top: -35px;
+   margin-left: 50px;
+   font-size: 16px;
+    color: #fff;
+   flex-direction: column;
+   font-weight: 300;
+}
+.contact-form{
+    width: 40%;
+    padding: 40px;
+    background-color: #fff;
+    color: black;
+}
+.contact-form h3{
+    font-weight: 600;
+    font-size: 20px;
+}
+.contact-form .inputbox{
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+}
+.contact-form .inputbox input{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 18px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+.contact-form .inputbox input[type="submit"]{
+    width: 100px;
+    cursor: pointer;
+    background-color: #108bb4;
+    color: black;
+    padding: 10px;
+    border: none;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
